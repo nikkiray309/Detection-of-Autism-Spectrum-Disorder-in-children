@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://d2jx2rerrg6sh3.cloudfront.net/images/news/ImageForNews_743149_16799588154215380.jpg'); /* Specify the path to your background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px auto; /* Center the container horizontally */
+    margin-right: 20px; 
+    
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto; /* Center the container horizontally */
+    margin-right: 20px; 
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="number"],
+select {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="radio"] {
+    transform: scale(1.2);
+}
+
+input[type="number"],
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

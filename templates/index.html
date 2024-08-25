@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Autism Spectral Disorder Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <div class="content">
+        <h1>Autism Spectral Disorder Prediction</h1>
+            <form action="/predict" method="POST">
+
+                <label for="age">Enter you child's Age (in months):
+                    <input type="number" name="age" min="0" step="1">
+                </label>
+                <br>
+
+                <label for="sex">Your Child's Gender:</label>
+                <input type="radio" name="sex" value="1"> Male
+                <input type="radio" name="sex" value="0"> Female
+                <br>
+
+                <br>
+                <label for="eth">Enter your Ethincity:</label>
+                <select name="eth" id="eth">
+                    <option value="asian">Asian</option>
+                    <option value="Hispanic">Hispanic</option>
+                    <option value="south asian">South Asian</option>
+                    <option value="black">Black</option>
+                    <option value="White European">White European</option>
+                    <option value="middle eastern">Middle Eastern</option>
+                    <option value="Latin0">Latino</option>
+                    <option value="mixed">Mixed</option>
+                    <option value="Native Indian">Native Indian</option>
+                    <option value="Pacifica">Pacifica</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+<br>
+                <label for="q0">Was your child diagnoized with Jaundice?</label>
+                <input type="radio" name="q0" value="1"> Yes
+                <input type="radio" name="q0" value="0"> No
+                <br>
+
+                <label for="q1">Does your child look at you when you call his/her name?</label>
+                <input type="radio" name="q1" value="0"> Yes
+                <input type="radio" name="q1" value="1"> No
+                <br>
+        
+                <label for="q2">How easy is it for you to get eye contact with your child?</label>
+                <input type="radio" name="q2" value="0"> Yes
+                <input type="radio" name="q2" value="1"> No
+                <br>
+
+                <label for="q3">Does your child point to indicate that s/he wants something?</label>
+                <input type="radio" name="q3" value="0"> Yes
+                <input type="radio" name="q3" value="1"> No
+                <br>
+
+                <label for="q4">Does your child point to share interest with you?</label>
+                <input type="radio" name="q4" value="0"> Yes
+                <input type="radio" name="q4" value="1"> No
+                <br>
+
+                <label for="q5">Does your child pretend?</label>
+                <input type="radio" name="q5" value="0"> Yes
+                <input type="radio" name="q5" value="1"> No
+                <br>
+
+                <label for="q6">Does your child follow where you're looking?</label>
+                <input type="radio" name="q6" value="0"> Yes
+                <input type="radio" name="q6" value="1"> No
+                <br>
+
+                <label for="q7">If you or someone else in the family is visibly upset, does your child show signs
+                    of wanting to comfort them?
+                    </label>
+                <input type="radio" name="q7" value="0"> Yes
+                <input type="radio" name="q7" value="1"> No
+                <br>
+
+                <label for="q8">Would you describe your child's first words
+                    as:</label>
+                <input type="radio" name="q8" value="0"> Typical
+                <input type="radio" name="q8" value="1"> Unusual
+                <br>
+
+                <label for="q9">Does your child use simple gestures?</label>
+                <input type="radio" name="q9" value="0"> Yes
+                <input type="radio" name="q9" value="1"> No
+                <br>
+
+                <label for="q10">Does your child stare at nothing with no apparent purpose?</label>
+                <input type="radio" name="q10" value="1"> Yes
+                <input type="radio" name="q10" value="0"> No
+                <br>
+
+                <label for="q11">Does any of your family members diagnoized with ASD?</label>
+                <input type="radio" name="q11" value="1"> Yes
+                <input type="radio" name="q11" value="0"> No
+                <br>
+                <label for="text2">Who completed the test</label>
+                <select name="text2" id="text2">
+                    <option value="family member">Family Member</option>
+                    <option value="Health Care Professional">Health Care Professional</option>
+                    <option value="Self">Self</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+        
+                <button type="submit" value="Predict">Predict</button>
+            </form>
+    </div>
+</body>
+</html>
