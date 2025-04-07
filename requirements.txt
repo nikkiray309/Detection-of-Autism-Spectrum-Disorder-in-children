@@ -1,3 +1,4 @@
+pip
 flask_cors
 streamlit==1.33.0
 scikit-learn==1.2.2
